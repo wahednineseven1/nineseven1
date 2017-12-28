@@ -1,0 +1,66 @@
+﻿body {
+
+    font-family: 'Josefin Sans', sans-serif;
+}
+.curve-mask {
+    width: 100%;
+    overflow: hidden;
+}
+
+    .curve-mask .curve-up, .curve-mask .curve-down {
+        position: relative;
+        z-index: 10;
+        width: 120%;
+        margin-left: -10%;
+        margin-right: 10%;
+        border-radius: 200vh 200vh 0% 0% / 20vh 20vh 0% 0%;
+        -moz-border-radius: 200vh 200vh 0% 0% / 20vh 20vh 0% 0%;
+        -webkit-border-radius: 200vh 200vh 0% 0% / 20vh 20vh 0% 0%;
+        overflow: hidden;
+        -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+    }
+
+    .curve-mask .curve-down {
+        border-radius: 0% 0% 200vh 200vh / 0% 0% 60vh 60vh;
+        -moz-border-radius: 0% 0% 200vh 200vh / 0% 0% 60vh 60vh;
+        -webkit-border-radius: 0% 0% 200vh 200vh / 0% 0% 60vh 60vh;
+    }
+
+    .curve-mask .curve-content-wrap {
+        width: 83.4%;
+        margin: 0 auto;
+        padding-bottom: 2em;
+        padding-top: 1vw;
+    }
+
+.curve-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.desc {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#curve-1 {
+    background: rgba(16,207,233,1);
+    background: -moz-linear-gradient(top, rgba(16,207,233,1) 0%, rgba(16,207,233,1) 32%, rgba(2,243,251,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(16,207,233,1)), color-stop(32%, rgba(16,207,233,1)), color-stop(100%, rgba(2,243,251,1)));
+    background: -webkit-linear-gradient(top, rgba(16,207,233,1) 0%, rgba(16,207,233,1) 32%, rgba(2,243,251,1) 100%);
+    background: -o-linear-gradient(top, rgba(16,207,233,1) 0%, rgba(16,207,233,1) 32%, rgba(2,243,251,1) 100%);
+    background: -ms-linear-gradient(top, rgba(16,207,233,1) 0%, rgba(16,207,233,1) 32%, rgba(2,243,251,1) 100%);
+    background: linear-gradient(to bottom, rgba(16,207,233,1) 0%, rgba(16,207,233,1) 32%, rgba(2,243,251,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10cfe9', endColorstr='#02f3fb', GradientType=0 );
+    background-position-y: -1vw;
+    color: white;
+    height: 90vh;
+}
+
+
+
+.text-center {
+    text-align: center;
+}
